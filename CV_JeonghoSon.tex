@@ -1,0 +1,322 @@
+% Resume content: Jeongho Son. Layout: the original Jake's Resume template.
+% Compile with pdfLaTeX for the canonical Jake's Resume rendering.
+% XeLaTeX is also supported for editor previews. No local supporting files needed.
+% Template: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% The template's original page geometry, typography, section style, and macros
+% below are unchanged; Korean text support and XeLaTeX compatibility guards
+% are added without changing the original Latin typography.
+% See the embedded MIT license at the end of this file.
+%-------------------------
+% Resume in LaTeX
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[cjk]{kotex}
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Enable Unicode mapping for PDF text extraction.
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\hypersetup{pdftitle={Jeongho Son - Resume}, pdfauthor={Jeongho Son}}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jeongho Son} \\ \vspace{1pt}
+    \small \href{mailto:jeonghoson@postech.ac.kr}{\underline{jeonghoson@postech.ac.kr}} $|$
+    \href{https://github.com/qwercxzsda}{\underline{github.com/qwercxzsda}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pohang University of Science and Technology (POSTECH)}{Pohang, South Korea}
+      {B.S. in Computer Science; GPA: 3.88/4.30}{Feb. 2021 -- Expected Feb. 2028}
+    \resumeProjectHeading
+      {\textbf{\normalsize Sejong Science High School}}{\textit{\small Feb. 2018 -- Feb. 2021}}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/qwercxzsda/optichallenge-2026-reports}{\textbf{Optimization Grand Challenge 2026}} $|$ \emph{C++20, Python, OpenMP, pybind11}}{June 2026 -- Sept. 2026}
+      \resumeItemListStart
+        \resumeItem{Led team 최적화야호 to the \textbf{Expert Optimizer award (3rd Prize; KRW 10,000,000)} among 958 teams.}
+        \resumeItem{Designed a geometry engine with slabs and bit-packed tables: 2,407--12,769$\times$ faster than naive vectorized Shapely.}
+        \resumeItem{Combined adaptive large neighborhood search (ALNS) with cached graph reachability and the geometry engine to optimize shipyard block placement and scheduling while enforcing crane-operation precedence.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://github.com/qwercxzsda/cs434-project}{\textbf{Distributed Sorting}} $|$ \emph{Scala, gRPC}}{Sept. 2023 -- Nov. 2023}
+      \resumeItemListStart
+        \resumeItem{Built a distributed external sorting system for datasets exceeding a single server's disk capacity; validated sorting of 40 GB (400 million records) across four workers.}
+        \resumeItem{Ranked \textbf{first in performance} and \textbf{first in design simplicity} among three CS434 project teams.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Standard ML Subset Compiler} $|$ \emph{OCaml}}{Apr. 2023 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{Implemented a compiler backend for Tiny ML, a Standard ML subset, generating assembly for the Mach abstract machine with support for higher-order functions, recursion, and pattern matching.}
+        \resumeItem{Built heap-allocated closures to capture lexical environments; used constant folding and compile-time variable bindings to reduce runtime instructions and stack operations.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{POSTECH--KAIST AI Competition (포카전)} $|$ \emph{Python, PyTorch}}{Mar. 2024 -- Sept. 2024}
+      \resumeItemListStart
+        \resumeItem{Our POSTECH team \textbf{won the AI competition against KAIST} with a Super Smash Bros. agent.}
+        \resumeItem{Our team developed the agent in Python and PyTorch using proximal policy optimization (PPO), grouping consecutive moves into composite actions.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://github.com/qwercxzsda/CSED539_ComputerVision}{\textbf{PSPNet Reproduction and Evaluation}} $|$ \emph{Python, PyTorch}}{Oct. 2023 -- Dec. 2023}
+      \resumeItemListStart
+        \resumeItem{Modified PSPNet's pyramid pooling to share context across levels; trained both variants on PASCAL VOC 2012.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{POSTECH Computer Vision Laboratory}}{Sept. 2024 -- Dec. 2024}
+      \resumeItemListStart
+        \resumeItem{Studied activity grammars for temporal action segmentation.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{POSTECH Data Systems Laboratory}}{Jan. 2024 -- Feb. 2024}
+      \resumeItemListStart
+        \resumeItem{Studied Transformer architectures, including attention, positional encoding, and encoder--decoder design; documented concepts in \href{https://github.com/qwercxzsda/2023_Winter_DataSystemsLab_Research}{\underline{research notes}}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------HONORS AND SERVICE-----------
+\section{Honors and Service}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Student Mentoring Program (SMP)}}{Feb. 2022 -- Dec. 2024}
+      \resumeItemListStart
+        \resumeItem{Tutored students in physics, computer science, and algorithms.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{National Science \& Technology Scholarship (이공계 국가우수장학금)}}{Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Awarded \textbf{full tuition through graduation} for academic achievement.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{POSTECH Global Leadership Program (GLP)}}{Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{Received a \textbf{KRW 2,500,000 university scholarship} for academic achievement.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills and Languages}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Programming Languages}{: C++, Python, Scala, OCaml} \\
+      \textbf{Libraries and Tools}{: PyTorch, OpenMP, pybind11, gRPC, Git} \\
+      \textbf{English}{: TOEFL iBT 5.5/6.0 (110/120), Aug. 8, 2026; TEPS 527/600 (Level 1+), July 5, 2025}
+    }}
+  \end{itemize}
+
+\end{document}
+
+%---------------------- EDITORIAL AND SOURCE NOTES ----------------------
+% These comments do not appear in the printed resume.
+% User confirmed: B.S. in Computer Science, completing the second semester
+% of next year (Fall 2027, relative to October 2026). Expected February 2028
+% is inferred from POSTECH's February conferral cycle. The public calendar
+% currently extends only through February 2027; a 2028 ceremony day is not
+% published. Update the expected month if the registrar confirms otherwise.
+% https://postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027&siteId=eng
+%
+% OGC project methods and benchmark scope were checked in the user-authorized
+% local repository /Users/mgmg/GitRepos/optichallenge-2026, especially:
+% technical-report/latex/key_ideas/succeeded/01_slab_nfp/section.tex
+% technical-report/latex/key_ideas/succeeded/01_slab_nfp/benchmark_table.tex
+% technical-report/latex/key_ideas/succeeded/01_slab_nfp/data/provenance.md
+% technical-report/latex/key_ideas/succeeded/06_cycle_lookup/implementation.tex
+% Public copy: https://github.com/qwercxzsda/optichallenge-2026-reports
+% The geometry timing compares one selected orientation pair from each of
+% six Stage 1 problems with a naive vectorized Shapely intersection-area
+% baseline. Medians of 11 runs after warm-up; parsing, validity repair,
+% displacement-grid creation, slab preprocessing, and cache initialization
+% are excluded. These are table-construction microbenchmarks, not whole
+% solver speedups or a claim to outperform every general-purpose 2D engine.
+% The conservative geometry can create false positives near boundaries;
+% the text deliberately does not claim exact equivalence to Shapely.
+% User confirmed team leadership and shared development of the geometry engine.
+% Award verified against the official Final Results leaderboard:
+% https://optichallenge.com/leaderboard
+% Team name: 최적화야호. "3rd Prize" is an award category, not third place overall.
+% 958-team field verified against the organizer's announcement:
+% https://connect.lgcns.com/en/newsroom/press/detail.ax-2609-4
+%
+% POSTECH--KAIST AI Competition (포카전): the user confirmed membership of
+% POSTECH's 2024 squad, a Super Smash Bros. agent implemented in Python,
+% PPO training, grouping consecutive moves into composite actions, and victory
+% against KAIST. The user confirmed March--September 2024 and use of PyTorch.
+% No game edition, score, or leadership role is inferred.
+%
+% Sorting benchmark and team count:
+% https://github.com/qwercxzsda/cs434-project/blob/main/README.md
+% Code-simplicity ranking is from the supplied CV.
+% User clarified that the distributed sorter supports total datasets larger
+% than a single server's disk capacity. The 40 GB benchmark is a separate
+% validation result, not evidence that 40 GB exceeded a worker's disk size.
+%
+% Compiler implementation reviewed in the user-authorized local repository:
+% /Users/mgmg/GitRepos/CSED321_ProgrammingLanguages_HW8/hw7/translate.ml
+% The assignment specification (hw7.pdf) identifies the source language as
+% Tiny ML, a subset of Standard ML, and the target as the Mach abstract machine.
+% The supplied hw7.zip contains a translation stub; the completed backend
+% implements code generation, closure environments, recursion, pattern
+% matching, constant folding, and constant bindings without stack storage.
+% The parser, type checker, monomorphisation, and Mach runtime are supplied
+% course infrastructure, so the resume does not claim their implementation
+% or complete Standard ML conformance. The project was inspected statically;
+% no new compiler test run or performance measurement is claimed.
+%
+% PSPNet methods, author affiliation, and results:
+% https://github.com/qwercxzsda/CSED539_ComputerVision/blob/main/docs/cvpr2022-author_kit-v1_1-1/latex/PaperForReview.tex
+% The modified model had 43.79% mIoU versus 57.40% for the baseline.
+% The resume describes the experiment without claiming an overall gain.
+%
+% Research notes:
+% https://github.com/qwercxzsda/2023_Winter_DataSystemsLab_Research/blob/main/dive_into_deep_learning/summary/chapter11.md
+% Replaced the supplied deep branch link with the working repository root.
+%
+% High-school education is retained as a compact line at the user's request.
+% Bold marks the name, entry titles, skill-category labels, rankings, awards,
+% monetary amounts, and scholarship benefits. Technical metrics and other
+% descriptive bullet text use regular weight.
+% Scholarship amounts and test scores come from the supplied CV; activity dates
+% also incorporate the user's subsequent additions and corrections.
+% User confirmed: Computer Vision Laboratory, September--December 2024;
+% Student Mentoring Program, February 2022--December 2024.
+% No employment title, publication, citizenship, phone, or LinkedIn is invented.
+
+%---------------------- ORIGINAL TEMPLATE LICENSE ----------------------
+% MIT License
+% 
+% Copyright (c) 2020 Jake Gutierrez
+% 
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+% 
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+% 
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
