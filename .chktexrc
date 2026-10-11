@@ -1,0 +1,22 @@
+# Each root-level .tex file is checked explicitly. Do not descend into TeX
+# distribution inputs such as glyphtounicode.tex.
+CmdLine { -I0 }
+
+TabSize = 2
+
+# These declarations and Jake's Resume macros may end with whitespace.
+Silent
+{
+  \pdfglyphtounicode \pdfgentounicode
+  \raggedbottom \raggedright \titlerule
+  \resumeSubheading \resumeSubSubheading \resumeProjectHeading
+  \resumeSubHeadingListStart \resumeSubHeadingListEnd
+  \resumeItemListStart \resumeItemListEnd
+}
+
+# Spaced en dashes are intentional in date ranges. Keep other dash checks.
+WordDash { 2 }
+DashExcpt { POSTECH--KAIST encoder--decoder }
+
+# PDF metadata is not typeset prose.
+WipeArg { \hypersetup:{} }

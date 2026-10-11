@@ -1,0 +1,26 @@
+# Indentation only: do not enable -m or reflow the resume's lines.
+defaultIndent: '  '
+indentPreamble: 1
+removeTrailingWhitespace:
+  beforeProcessing: 0
+  afterProcessing: 1
+
+noAdditionalIndent:
+  document: 1
+indentRules:
+  item: '  '
+
+# Recognize the template's list wrappers, excluding their macro definitions.
+specialBeginEnd:
+  - name: resumeSubHeadingList
+    begin: '(?m)^[ \t]*\\resumeSubHeadingListStart\b'
+    end: '(?m)^[ \t]*\\resumeSubHeadingListEnd\b'
+    nested: 1
+  - name: resumeItemList
+    begin: '(?m)^[ \t]*\\resumeItemListStart\b'
+    end: '(?m)^[ \t]*\\resumeItemListEnd\b'
+    nested: 1
+
+# Avoid adding alignment padding inside the template's heading tables.
+lookForAlignDelims:
+  tabular*: 0

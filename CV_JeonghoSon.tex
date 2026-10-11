@@ -83,24 +83,24 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -122,104 +122,104 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Jeongho Son} \\ \vspace{1pt}
-    \small \href{mailto:jeonghoson@postech.ac.kr}{\underline{jeonghoson@postech.ac.kr}} $|$
-    \href{https://github.com/qwercxzsda}{\underline{github.com/qwercxzsda}}
+  \textbf{\Huge \scshape Jeongho Son} \\ \vspace{1pt}
+  \small \href{mailto:jeonghoson@postech.ac.kr}{\underline{jeonghoson@postech.ac.kr}} $|$
+  \href{https://github.com/qwercxzsda}{\underline{github.com/qwercxzsda}}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Pohang University of Science and Technology (POSTECH)}{Pohang, South Korea}
-      {B.S. in Computer Science; GPA: 3.88/4.30}{Feb. 2021 -- Expected Feb. 2028}
-    \resumeProjectHeading
-      {\textbf{\normalsize Sejong Science High School}}{\textit{\small Feb. 2018 -- Feb. 2021}}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Pohang University of Science and Technology (POSTECH)}{Pohang, South Korea}
+  {B.S. in Computer Science; GPA: 3.88/4.30}{Feb. 2021 -- Expected Feb. 2028} % chktex 13 -- GPA: is a label, not a sentence ending.
+  \resumeProjectHeading
+  {\textbf{\normalsize Sejong Science High School}}{\textit{\small Feb. 2018 -- Feb. 2021}}
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\href{https://github.com/qwercxzsda/optichallenge-2026-reports}{\textbf{Optimization Grand Challenge 2026}} $|$ \emph{C++20, Python, OpenMP, pybind11}}{June 2026 -- Sept. 2026}
-      \resumeItemListStart
-        \resumeItem{Led team 최적화야호 to the \textbf{Expert Optimizer award (3rd Prize; KRW 10,000,000)} among 958 teams.}
-        \resumeItem{Designed a geometry engine with slabs and bit-packed tables: 2,407--12,769$\times$ faster than naive vectorized Shapely.}
-        \resumeItem{Combined adaptive large neighborhood search (ALNS) with cached graph reachability and the geometry engine to optimize shipyard block placement and scheduling while enforcing crane-operation precedence.}
-      \resumeItemListEnd
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\href{https://github.com/qwercxzsda/optichallenge-2026-reports}{\textbf{Optimization Grand Challenge 2026}} $|$ \emph{C++20, Python, OpenMP, pybind11}}{June 2026 -- Sept. 2026}
+  \resumeItemListStart
+    \resumeItem{Led team 최적화야호 to the \textbf{Expert Optimizer award (3rd Prize; KRW 10,000,000)} among 958 teams.}
+    \resumeItem{Designed a geometry engine with slabs and bit-packed tables: 2,407--12,769$\times$ faster than naive vectorized Shapely.}
+    \resumeItem{Combined adaptive large neighborhood search (ALNS) with cached graph reachability and the geometry engine to optimize shipyard block placement and scheduling while enforcing crane-operation precedence.}
+  \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://github.com/qwercxzsda/cs434-project}{\textbf{Distributed Sorting}} $|$ \emph{Scala, gRPC}}{Sept. 2023 -- Nov. 2023}
-      \resumeItemListStart
-        \resumeItem{Built a distributed external sorting system for datasets exceeding a single server's disk capacity; validated sorting of 40 GB (400 million records) across four workers.}
-        \resumeItem{Ranked \textbf{first in performance} and \textbf{first in design simplicity} among three CS434 project teams.}
-      \resumeItemListEnd
+  \resumeProjectHeading
+  {\href{https://github.com/qwercxzsda/cs434-project}{\textbf{Distributed Sorting}} $|$ \emph{Scala, gRPC}}{Sept. 2023 -- Nov. 2023}
+  \resumeItemListStart
+    \resumeItem{Built a distributed external sorting system for datasets exceeding a single server's disk capacity; validated sorting of 40 GB (400 million records) across four workers.}
+    \resumeItem{Ranked \textbf{first in performance} and \textbf{first in design simplicity} among three CS434 project teams.}
+  \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Standard ML Subset Compiler} $|$ \emph{OCaml}}{Apr. 2023 -- June 2023}
-      \resumeItemListStart
-        \resumeItem{Implemented a compiler backend for Tiny ML, a Standard ML subset, generating assembly for the Mach abstract machine with support for higher-order functions, recursion, and pattern matching.}
-        \resumeItem{Built heap-allocated closures to capture lexical environments; used constant folding and compile-time variable bindings to reduce runtime instructions and stack operations.}
-      \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{Standard ML Subset Compiler} $|$ \emph{OCaml}}{Apr. 2023 -- June 2023}
+  \resumeItemListStart
+    \resumeItem{Implemented a compiler backend for Tiny ML, a Standard ML subset, generating assembly for the Mach abstract machine with support for higher-order functions, recursion, and pattern matching.}
+    \resumeItem{Built heap-allocated closures to capture lexical environments; used constant folding and compile-time variable bindings to reduce runtime instructions and stack operations.}
+  \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{POSTECH--KAIST AI Competition (포카전)} $|$ \emph{Python, PyTorch}}{Mar. 2024 -- Sept. 2024}
-      \resumeItemListStart
-        \resumeItem{Our POSTECH team \textbf{won the AI competition against KAIST} with a Super Smash Bros. agent.}
-        \resumeItem{Our team developed the agent in Python and PyTorch using proximal policy optimization (PPO), grouping consecutive moves into composite actions.}
-      \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{POSTECH--KAIST AI Competition (포카전)} $|$ \emph{Python, PyTorch}}{Mar. 2024 -- Sept. 2024}
+  \resumeItemListStart
+    \resumeItem{Our POSTECH team \textbf{won the AI competition against KAIST} with a Super Smash Bros.\ agent.}
+    \resumeItem{Our team developed the agent in Python and PyTorch using proximal policy optimization (PPO), grouping consecutive moves into composite actions.}
+  \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://github.com/qwercxzsda/CSED539_ComputerVision}{\textbf{PSPNet Reproduction and Evaluation}} $|$ \emph{Python, PyTorch}}{Oct. 2023 -- Dec. 2023}
-      \resumeItemListStart
-        \resumeItem{Modified PSPNet's pyramid pooling to share context across levels; trained both variants on PASCAL VOC 2012.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+  \resumeProjectHeading
+  {\href{https://github.com/qwercxzsda/CSED539_ComputerVision}{\textbf{PSPNet Reproduction and Evaluation}} $|$ \emph{Python, PyTorch}}{Oct. 2023 -- Dec. 2023}
+  \resumeItemListStart
+    \resumeItem{Modified PSPNet's pyramid pooling to share context across levels; trained both variants on PASCAL VOC 2012.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------RESEARCH-----------
 \section{Research Experience}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{POSTECH Computer Vision Laboratory}}{Sept. 2024 -- Dec. 2024}
-      \resumeItemListStart
-        \resumeItem{Studied activity grammars for temporal action segmentation.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{POSTECH Data Systems Laboratory}}{Jan. 2024 -- Feb. 2024}
-      \resumeItemListStart
-        \resumeItem{Studied Transformer architectures, including attention, positional encoding, and encoder--decoder design; documented concepts in \href{https://github.com/qwercxzsda/2023_Winter_DataSystemsLab_Research}{\underline{research notes}}.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\textbf{POSTECH Computer Vision Laboratory}}{Sept. 2024 -- Dec. 2024}
+  \resumeItemListStart
+    \resumeItem{Studied activity grammars for temporal action segmentation.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{POSTECH Data Systems Laboratory}}{Jan. 2024 -- Feb. 2024}
+  \resumeItemListStart
+    \resumeItem{Studied Transformer architectures, including attention, positional encoding, and encoder--decoder design; documented concepts in \href{https://github.com/qwercxzsda/2023_Winter_DataSystemsLab_Research}{\underline{research notes}}.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------HONORS AND SERVICE-----------
 \section{Honors and Service}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Student Mentoring Program (SMP)}}{Feb. 2022 -- Dec. 2024}
-      \resumeItemListStart
-        \resumeItem{Tutored students in physics, computer science, and algorithms.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{National Science \& Technology Scholarship (이공계 국가우수장학금)}}{Aug. 2023}
-      \resumeItemListStart
-        \resumeItem{Awarded \textbf{full tuition through graduation} for academic achievement.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{POSTECH Global Leadership Program (GLP)}}{Mar. 2023}
-      \resumeItemListStart
-        \resumeItem{Received a \textbf{KRW 2,500,000 university scholarship} for academic achievement.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\textbf{Student Mentoring Program (SMP)}}{Feb. 2022 -- Dec. 2024}
+  \resumeItemListStart
+    \resumeItem{Tutored students in physics, computer science, and algorithms.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{National Science \& Technology Scholarship (이공계 국가우수장학금)}}{Aug. 2023}
+  \resumeItemListStart
+    \resumeItem{Awarded \textbf{full tuition through graduation} for academic achievement.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{POSTECH Global Leadership Program (GLP)}}{Mar. 2023}
+  \resumeItemListStart
+    \resumeItem{Received a \textbf{KRW 2,500,000 university scholarship} for academic achievement.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Technical Skills and Languages}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
       \textbf{Programming Languages}{: C++, Python, Scala, OCaml} \\
       \textbf{Libraries and Tools}{: PyTorch, OpenMP, pybind11, gRPC, Git} \\
       \textbf{English}{: TOEFL iBT 5.5/6.0 (110/120), Aug. 8, 2026; TEPS 527/600 (Level 1+), July 5, 2025}
     }}
-  \end{itemize}
+\end{itemize}
 
 \end{document}
 
